@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: rgb(10, 6, 39);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: rgb(255,241,89);
+    padding: 10px;
+}
+
+/* Agregado */
+
+header nav{
+    width: 70%;
+    margin: auto;
+}
+
+/************/
+
+header h1{
+    display: none;
+}
+
+/* Agregado */
+
+header ul li{
+    display: inline-block;
+    margin-right: 12px;
+}
+
+header ul{ 
+    margin-top: 10px;  
+}
+
+/****************/
+
+a{
+    text-decoration: none;
+    color: rgb(18, 11, 76);;
+}
+
+main{  
+    background-color: rgb(235,235,235);
+}
+
+section{
+    width: 100%;
+    /* margin: auto;    */
+}
+
+
+
+section h2{
+    padding: 15px;
+    color: red;
+}
+
+.style-article{
+    background-color: #fdfeff;
+    color: rgb(10, 6, 39);
+    text-align: center;
+    margin: 10px 0px;
+    padding: 10px;
+    border-radius: 8px;
+    line-height: 24px;
+    height: max-content;
+}
+
+article.style-article img{
+    width: 30%;
+}
+
+/* Modificado */
+article.style-article h3{
+    font-family: 'Victor Mono', monospace;
+    font-style: italic;
+    margin-bottom: 10px;
+    color: red;
+}
+
+
+/* FORMULARIO */
+
+main#main-form{
+    background-color: aqua;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    background-color: rgb(185, 234, 236);
+    width: 70vw;
+    max-width: 520px;
+    padding: 50px;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+form label{
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+form input{
+    margin-bottom: 30px;
+}
+
+form input[type="text"]{
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    outline: none;
+
+    transition: border 2s;
+}
+
+form input[type="text"]:focus{
+    border: 3px solid rgb(22, 69, 199);
+}
+
+form button{
+    color: white;
+    background-color: blue;
+    font-weight: 700;
+    border: 2px solid transparent;
+    padding: 5px;
+    transition-property: background-color,  border-radius;
+    transition-duration: 2s;
+}
+
+form button:hover{
+    background-color: rgb(117, 197, 63);
+    border-radius: 10px;
+    box-shadow: 13px 17px 14px -9px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 13px 17px 14px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 13px 17px 14px -9px rgba(0,0,0,0.75);
+}
+
+div.animacion{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+
+    animation: redondo 3s infinite;
+}
+
+@keyframes redondo{
+    from{
+        border-radius: 3px;
+    }
+
+    to{
+        border-radius: 50%;
+        background-color: blue;
+    }
+}
+
+
+@media (min-width: 520px){
+    section.mas-vendidos{
+        background-color: grey;
+        height: 500px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+    }
+    
+    article.style-article{
+        max-width: 150px;
+    }
+
+    /* article#football img{
+        margin: auto;
+    } */
+
+    article#football{
+        background-color: aqua;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: flex-start;
+    }
+}
+
+@media (min-width: 760px){
+    .style-article{
+        border: 1px solid rgb(63, 63, 63);
+        max-width: 270px;
+        
+    }
+
+    .style-article h3{
+        font-size: 1rem;
+    }
+}
+
