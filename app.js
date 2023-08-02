@@ -8,7 +8,10 @@ const productRoute = require('./src/routes/product');
 app.use(express.static(path.resolve(__dirname,'public')));
 app.use(express.json());
 
-app.listen(3000, () => console.log('Server up OK!'));
+const port = process.env.PORT || 3001;
+
+
+app.listen(port, () => console.log('Server up OK!'));
 
 app.use('/', mainRoute);
 app.use('/product', productRoute);
