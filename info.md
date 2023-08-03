@@ -23,7 +23,7 @@
 
      - param2: valor de la configuración     
 
-3- Archivos ".ejs"
+3- Envío de información a los archivos ".ejs"
 
 
 Siempre para el envío de datos lo hacemos a través de un objeto literale como 2º parámetro de la función
@@ -36,6 +36,8 @@ Ej. a los partials
 ``````
 <%- include('./partials/header.ejs', {encabezado: 'Mercado'}) %>
 ``````
+
+4- En los archivos ".ejs"
 
 Para implementar código JS
 ``````
