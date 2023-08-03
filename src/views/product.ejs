@@ -1,0 +1,28 @@
+<%- include('./partials/head.ejs', {title: 'Mi producto'}) %>
+
+<body>
+    <%- include('./partials/header.ejs', {encabezado: item.title}) %>
+
+    <!-- Contenido principal de la página  -->
+    <main>        
+        <article class="style-article" id="football">
+                            
+            <img src="<%= item.img %>" alt="<%= item.title  %>">
+
+            <h3>
+                <%= item.title  %>
+            </h3>
+            <p>
+                $<%= item.price  %>
+            </p>
+            <p>Envío gratis</p>
+            <a href="/buy">Comprar</a>
+        </article>
+    </main>
+
+    <footer>
+        <p>Copyright</p>
+    </footer>
+    
+</body>
+</html>

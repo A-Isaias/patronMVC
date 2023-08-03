@@ -1,8 +1,13 @@
 const path = require('path');
+const productData = require('../productData.json');
+
+
 
 const mainController = {
     home: (req, res) =>{
-        res.sendFile(path.resolve(__dirname, '../views/home.html'))},
+        const data = productData.results
+
+        res.render('home',{ title: 'Mercado  Liebre', data: data })},
 }
 
 module.exports = mainController;

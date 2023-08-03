@@ -1,0 +1,32 @@
+{
+    "results":[
+        {
+            "id": "1",
+            "img": "/img/img-cafetera-moulinex.jpg",
+            "title": "cafetera",
+            "brand": "Moulinex",
+            "price": 3465
+        },
+        {
+            "id": "2",
+            "img": "/img/img-macbook-pro-2019.jpg",
+            "title": "Macbook pro",
+            "brand": "Apple",
+            "price": 138653
+        },
+        {
+            "id": "3",
+            "img": "/img/img-samsung-galaxy-s10.jpg",
+            "title": "Smartphone Galaxy S10",
+            "brand": "Samsung",
+            "price": 45654
+        },
+        {
+            "id": "4",
+            "img": "/img/img-tv-samsung-smart.jpg",
+            "title": "SmartTV",
+            "brand": "Samsung",
+            "price": 45654
+        }
+    ]
+}

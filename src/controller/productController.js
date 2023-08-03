@@ -1,17 +1,19 @@
 const path = require('path');
+const productData = require('../productData.json');
+
+const { results } = productData;
 
 const productController = {
     list: (req, res) => {
-      res.sendFile(path.resolve(__dirname, '../views/product.html')) 
+      res.render('product')
     },
     productDetail: (req, res) => {
         const { id } = req.params;
 
-        // Consulta a la base de datos
+        const productItem = results.find(prod => prod.id === id)
 
-        console.log(`Consulta a la base de datos: ${id}`)
+        res.render('product', { item: productItem})
 
-        res.sendFile(path.resolve(__dirname, '../views/product.html')) 
 
     }
 }

@@ -8,6 +8,12 @@ const productRoute = require('./src/routes/product');
 app.use(express.static(path.resolve(__dirname,'public')));
 app.use(express.json());
 
+// Indicamos el motor de plantilla
+app.set("view engine",  "ejs");
+//Direccionamos a las vistas
+app.set('views', path.join(__dirname, '/src/views'));
+
+
 const port = process.env.PORT || 3001;
 
 

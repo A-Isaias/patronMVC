@@ -1,0 +1,71 @@
+<%- include('./partials/head.ejs', {title: 'ML'}) %>
+
+
+<body>
+    <!-- Encabezado -->
+    <%- include('./partials/header.ejs', {encabezado: 'Mercado'}) %>
+
+    <!-- Contenido principal -->
+    <main>
+
+        <section class="mas-vendidos">
+            <h2>Productos más vendidos</h2>
+            <div class="product-list">
+            <% data.map(({id, title, price, brand,img})=>{ %>
+                <article class="style-article" id="football">
+                    <img src="<%= img %> " alt="<%= title %>">
+                    <h3>
+                        <%= title %>
+                    </h3>
+                    <p>
+                        <%= brand %>
+                    </p>
+                    <p>
+                        $<%= price  %>
+                    </p>
+                    <a href="/product/<%= id %>">Ver más</a>
+                </article>
+                <% }) %>
+            </div>
+
+        </section>
+
+        <!-- <section class="mas-vendidos">
+            <h2>Productos más vendidos</h2>
+            <div class="product-list">
+            <% data.map(({id, title, price, brand,img})=>{ %>
+                    <%- include('./partials/article.ejs', {id: id, title: title,price: price,brand: brand, img:  img}) %>    
+                <% }) %>
+            </div>
+
+        </section> -->
+
+        <!-- <section>
+                <h2>Últimos visitados</h2>
+
+                <article class="style-article">
+                    <img src="/img/basketball.png" alt="pelota de basquet" width="100">
+                    <h3>Pelota  de  basket</h3>
+                    <p>$20400</p>
+                    <p>Envío gratis</p>
+                    <a href="/detalle">Ver más</a>
+                </article>
+                <article id="about" class="style-article">
+                    <img src="/img/pelota.png" alt="pelota de fútbol" width="100">
+                    <h3>Paleta Padel adidas Precision Pro 2021 Importada</h3>
+                    <p>$20400</p>
+                    <p>Envío gratis</p>
+                    <a href="/detalle">Ver más</a>
+                </article>
+
+            </section> -->
+    </main>
+
+    <!-- Contenido secundario -->
+    <!-- <footer>
+        <p>Copyright</p>
+    </footer> -->
+
+</body>
+
+</html>

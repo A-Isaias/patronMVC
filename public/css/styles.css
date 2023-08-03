@@ -47,48 +47,59 @@ a{
 
 main{  
     background-color: rgb(235,235,235);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
 }
 
 section{
-    width: 100%;
-    /* margin: auto;    */
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
 }
 
 
 
 section h2{
     padding: 15px;
-    color: red;
 }
 
-.style-article{
+section div.product-list{
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-end;
+}
+
+article.style-article{
     background-color: #fdfeff;
     color: rgb(10, 6, 39);
     text-align: center;
-    margin: 10px 0px;
     padding: 10px;
-    border-radius: 8px;
     line-height: 24px;
-    height: max-content;
+    width: 200px;
+    margin-bottom: 20px;
 }
 
 article.style-article img{
-    width: 30%;
+    width: 150px;
 }
 
 /* Modificado */
 article.style-article h3{
-    font-family: 'Victor Mono', monospace;
-    font-style: italic;
     margin-bottom: 10px;
-    color: red;
+    text-transform: capitalize;
 }
 
 
 /* FORMULARIO */
 
 main#main-form{
-    background-color: aqua;
 
     display: flex;
     flex-direction: column;
@@ -164,7 +175,7 @@ div.animacion{
         background-color: blue;
     }
 }
-
+/* 
 
 @media (min-width: 520px){
     section.mas-vendidos{
@@ -179,12 +190,12 @@ div.animacion{
     
     article.style-article{
         max-width: 150px;
-    }
+    } */
 
     /* article#football img{
         margin: auto;
     } */
-
+/* 
     article#football{
         background-color: aqua;
         display: flex;
@@ -204,5 +215,5 @@ div.animacion{
     .style-article h3{
         font-size: 1rem;
     }
-}
+} */
 
