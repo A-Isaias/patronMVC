@@ -1,9 +1,9 @@
 const express = require('express');
 const route = express.Router();
-const mainController = require('../controller/mainController');
+const { search } = require('../controller/mainController');
 
 /* "/" */
-route.get('/', mainController.search );
+route.get('/', search );
 // route.get('/', mainController.home );
 
 
