@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,12 +26,16 @@
     <main>        
         <article class="style-article" id="football">
                             
-            <img src="/img/pelota.png" alt="pelota de fútbol">
+            <img src="<%= product.img %>" alt="<%= product.title %>">
 
-            <h3>Paleta Padel adidas</h3>
-            <p>$20400</p>
+            <h3>
+                <%= product.title %>
+            </h3>
+            <p>
+                $<%= product.price %>
+            </p>
             <p>Envío gratis</p>
-            <a href="/detalle">Ver más</a>
+            <a href="/detalle">Comprar</a>
         </article>
     </main>
 

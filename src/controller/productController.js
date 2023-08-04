@@ -1,17 +1,18 @@
 const path = require('path');
+const dataBase = require('../dataBase/productsList.json')
 
 const productController = {
     list: (req, res) => {
       res.sendFile(path.resolve(__dirname, '../views/product.html')) 
     },
     productDetail: (req, res) => {
+        // const id = req.params.id;
         const { id } = req.params;
+        const { results } = dataBase;
 
-        // Consulta a la base de datos
+        const product = results.find((prod) => prod.id === id );
 
-        console.log(`Consulta a la base de datos: ${id}`)
-
-        res.sendFile(path.resolve(__dirname, '../views/product.html')) 
+        res.render('product', { product })
 
     }
 }

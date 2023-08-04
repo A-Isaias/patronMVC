@@ -7,6 +7,8 @@ const productRoute = require('./src/routes/product');
 
 app.use(express.static(path.resolve(__dirname,'public')));
 app.use(express.json());
+app.set('view engine', 'ejs');
+app.set('views', './src/views');
 
 const port = process.env.PORT || 3001;
 
