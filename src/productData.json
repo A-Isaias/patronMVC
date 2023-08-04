@@ -10,21 +10,21 @@
         {
             "id": "2",
             "img": "/img/img-macbook-pro-2019.jpg",
-            "title": "Macbook pro",
+            "title": "macbook pro",
             "brand": "Apple",
             "price": 138653
         },
         {
             "id": "3",
             "img": "/img/img-samsung-galaxy-s10.jpg",
-            "title": "Smartphone Galaxy S10",
+            "title": "smartphone Galaxy S10",
             "brand": "Samsung",
             "price": 45654
         },
         {
             "id": "4",
             "img": "/img/img-tv-samsung-smart.jpg",
-            "title": "SmartTV",
+            "title": "smartTV",
             "brand": "Samsung",
             "price": 45654
         }

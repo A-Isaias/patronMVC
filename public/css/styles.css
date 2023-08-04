@@ -12,6 +12,8 @@ body{
 header{
     background-color: rgb(255,241,89);
     padding: 10px;
+    display: flex;
+    align-items: center;
 }
 
 /* Agregado */
@@ -106,7 +108,7 @@ main#main-form{
     align-items: center;
 }
 
-form{
+/* form{
     background-color: rgb(185, 234, 236);
     width: 70vw;
     max-width: 520px;
@@ -155,7 +157,7 @@ form button:hover{
     box-shadow: 13px 17px 14px -9px rgba(0,0,0,0.75);
     -webkit-box-shadow: 13px 17px 14px -9px rgba(0,0,0,0.75);
     -moz-box-shadow: 13px 17px 14px -9px rgba(0,0,0,0.75);
-}
+} */
 
 div.animacion{
     width: 100px;
@@ -175,6 +177,28 @@ div.animacion{
         background-color: blue;
     }
 }
+
+form#search{
+    background-color: white;
+    height: max-content;
+    display: flex;
+    align-items: center;
+}
+
+form#search input{
+    border: 1px solid transparent;
+    outline: none;
+    padding-left: 5px;
+}
+
+form#search button{
+    background-color: white;
+    border: 1px solid transparent;
+    border-left: 1px solid;
+    padding: 5px;
+}
+
+
 /* 
 
 @media (min-width: 520px){
