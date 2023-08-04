@@ -24,7 +24,7 @@ const mainController = {
 
             const listSearch = results.filter(({
                 title
-            }) => title.includes(q.toLowerCase()))
+            }) => title.toLowerCase().includes(q.toLowerCase()))
 
             res.render('home', {
                 title: 'Mercado Liebre',
