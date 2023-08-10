@@ -13,7 +13,7 @@ app.set('views', './src/views');
 const port = process.env.PORT || 3001;
 
 
-app.listen(port, () => console.log('Server up OK!'));
+app.listen(port, () => console.log('Server up OK in port :',port));
 
 app.use('/', mainRoute);
 app.use('/product', productRoute);
